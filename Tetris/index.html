@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="game" id="game"></div>
+<div class="next" id="next"></div>
+<div class="info">
+    <div>已得分：<span id="score">0</span>分</div>
+</div>
+<div style="position: fixed; top: 500px" id="waiting"></div>
+
+<div class="anotherGame" id="anotherGame"></div>
+<div class="anotherNext" id="anotherNext"></div>
+<div class="anotherInfo">
+    <div>已得分：<span id="anotherScore">0</span>分</div>
+</div>
+
+<div id="result">
+    最终得分：<h1></h1>
+    <span>我先溜了！小样，你能超过我吗？</span>
+</div>
+
+<script src="js/socket.io.js"></script>
+<script src="js/game.js"></script>
+<script src="js/local.js"></script>
+<script src="js/remote.js"></script>
+<script src="js/square.js"></script>
+<script src="js/squareFactory.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
